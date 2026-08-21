@@ -4,6 +4,15 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -12,7 +21,7 @@
             bindings = <
 &kp KP_MINUS      &kp KP_MULTIPLY  &kp KP_DIVIDE                      &kp ESCAPE      &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7             &kp N8     &kp N9     &kp N0         &kp BACKSPACE
 &kp KP_PLUS       &kp KP_NUMBER_9  &kp KP_NUMBER_8  &kp KP_NUMBER_7   &kp TAB         &kp Q           &kp W             &kp E         &kp R         &kp T     &kp Y         &kp U              &kp I      &kp O      &kp SEMICOLON  &kp DELETE
-&lt 1 KP_NUMLOCK  &kp KP_NUMBER_6  &kp KP_NUMBER_5  &kp KP_NUMBER_4   &mo 2           &kp A           &kp S             &kp D         &kp F         &kp G     &kp H         &kp J              &kp K      &kp L      &kp P          &kp SINGLE_QUOTE
+&lt 1 KP_NUMLOCK  &kp KP_NUMBER_6  &kp KP_NUMBER_5  &kp KP_NUMBER_4   &mo 2           &kp A           &kp S             &kp D         &kp F         &kp G     &kp H         &kp J              &kp K      &kp L      &kp P          &kp ENTER
 &kp ENTER         &kp KP_NUMBER_3  &kp KP_NUMBER_2  &kp KP_NUMBER_1   &kp LEFT_SHIFT  &kp Z           &kp X             &kp C         &kp V         &kp B     &kp N         &kp M              &kp COMMA  &kp PERIOD &kp RSHIFT
                                                                       &kp KP_DOT      &kp KP_NUMBER_0 &kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE &kp RIGHT_ALT &kp RIGHT_CONTROL  &mo 2
             >;
