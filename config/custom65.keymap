@@ -30,10 +30,10 @@
         nav {
             display-name = "Navigation";
             bindings = < 
-&kp KP_MINUS      &kp KP_MULTIPLY  &kp KP_DIVIDE                      &kp ESCAPE      &kp N1          &kp N2            &kp N3          &kp N4        &kp N5        &kp N6         &kp N7             &kp N8           &kp N9                &kp N0                &kp BACKSPACE
-&trans            &kp PAGE_UP      &kp UP           &kp HOME          &kp TAB         &kp Q           &kp W             &kp E           &kp R         &kp T         &kp Y          &kp U              &kp I            &kp O                 &kp SEMICOLON         &kp DELETE
+&kp C_VOL_DN      &kp C_PP         &kp C_MUTE                         &kp ESCAPE      &kp N1          &kp N2            &kp N3          &kp N4        &kp N5        &kp N6         &kp N7             &kp N8           &kp N9                &kp N0                &kp BACKSPACE
+&kp C_VOL_UP      &kp PAGE_UP      &kp UP           &kp HOME          &kp TAB         &kp Q           &kp W             &kp E           &kp R         &kp T         &kp Y          &kp U              &kp I            &kp O                 &kp SEMICOLON         &kp DELETE
 &trans            &kp LEFT         &kp DOWN         &kp RIGHT         &trans          &kp A           &kp S             &kp D           &kp F         &kp G         &kp H          &kp J              &kp K            &kp L                 &kp P                 &kp SINGLE_QUOTE
-&trans            &kp PAGE_DOWN    &kp INSERT       &kp END           &kp CAPSLOCK    &kp Z           &kp X             &kp C           &kp V         &kp B         &kp N          &kp M              &kp COMMA        &kp PERIOD            &trans
+&kp PSCRN         &kp PAGE_DOWN    &kp INSERT       &kp END           &kp CAPSLOCK    &kp Z           &kp X             &kp C           &kp V         &kp B         &kp N          &kp M              &kp COMMA        &kp PERIOD            &trans
                                                                       &trans          &trans          &trans            &trans          &trans        &trans        &trans         &trans             &trans
             >;
         };
@@ -44,7 +44,7 @@
 &kp F12           &kp F11          &kp F10                            &kp BSPC        &kp F1           &kp F2           &kp F3          &kp F4        &kp F5        &kp F6         &kp F7            &kp F8            &kp F9                &kp F10               &kp BACKSPACE
 &trans            &kp F9           &kp F8           &kp F7            &kp DEL         &kp END          &kp UP           &kp HOME        &kp PAGE_UP   &kp PLUS      &kp EQUAL      &kp PIPE          &kp QUESTION      &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &kp BACKSLASH
 &trans            &kp F6           &kp F5           &kp F4            &trans          &kp LEFT         &kp DOWN         &kp RIGHT       &kp PAGE_DOWN &kp UNDER     &kp MINUS      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp SLASH
-&trans            &kp F3           &kp F2           &kp F1            &caps_word      &kp C_MUTE       &kp C_PLAY_PAUSE &kp C_VOLUME_UP &kp C_VOL_DN  &none         &none          &none             &kp TILDE         &kp GRAVE             &none
+&trans            &kp F3           &kp F2           &kp F1            &caps_word      &kp LC(Z)        &kp LC(X)        &kp LC(C)       &kp LC(V)     &none         &none          &none             &kp TILDE         &kp GRAVE             &none
                                                                       &none           &none            &trans           &trans          &trans        &trans        &trans         &trans            &trans
             >;
         };
@@ -53,7 +53,7 @@
             display-name = "System control";
             bindings = <
 &none             &none            &none                              &bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &none          &none             &none             &none                 &none                 &none
-&none             &none            &none            &none             &rgb_ug RGB_TOG &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD &none         &none         &none          &none             &none             &none                 &none                 &none
+&none             &none            &none            &none             &none           &none            &none            &none           &none         &none         &none          &none             &none             &none                 &none                 &none
 &trans            &none            &none            &none             &trans          &none            &studio_unlock   &none           &none         &none         &none          &none             &none             &none                 &none                 &none
 &none             &to 3            &to 2            &to 1             &none           &none            &none            &none           &none         &none         &none          &none             &none             &none                 &none
                                                                       &none           &to 0            &none            &none           &none         &none         &none          &none             &trans
